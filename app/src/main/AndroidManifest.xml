@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smd_aftermid">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SMD_AfterMID">
+        <activity
+            android:name=".RestAPIExample.MyRestMainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BroadcastReceiverExample.Example2.ExampleTwoMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".BroadcastReceiverExample.MyAirPlaneModeReceiver" />
+        <receiver android:name=".BroadcastReceiverExample.Example2.ExampleTwoMyBroadcast" />
+
+        <activity
+            android:name=".BroadcastReceiverExample.AirPlaneModeChangeMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirebaseExample.FirebaseExampleOneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GestureExamples.MultiTouchExample.MultiTouchMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GestureExamples.SingleTouchMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SensorExample.SensorMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CardViewExample.ScrollingActivityMain"
+            android:exported="true"
+            android:label="@string/title_activity_scrolling_main"
+            android:theme="@style/Theme.SMD_AfterMID.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ServiceExamples.BoundServiceExample.MyBoundServiceExampleOne"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ServiceExamples.BoundServiceExample.BoundServiceExampleOneMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ServiceExamples.ServiceExampleOneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentExample.ContactsAppExample.ContactsAppMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentExample.CommunicationBTWFragment.CommunicationMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentExample.FragmentExampleOneMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerViewExample.RecyclerViewMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".asyncTaskClassExample.DownloadWebContentUsingAsyncTaskClass"
+            android:exported="true" />
+        <activity
+            android:name=".asyncTaskClassExample.asynctaskDownloadImage"
+            android:exported="true" />
+        <activity
+            android:name=".SQLiteExample.EditContactEntery"
+            android:exported="true" />
+        <activity
+            android:name=".SQLiteExample.NewContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SQLiteExample.ContactEntery"
+            android:exported="true" />
+        <activity
+            android:name=".SQLiteExample.MainActivityContactList"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service android:name=".ServiceExamples.MyServiceExampleOne" />
+    </application>
+
+</manifest>
